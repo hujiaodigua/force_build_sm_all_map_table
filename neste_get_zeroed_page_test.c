@@ -113,8 +113,8 @@ module_param(func, int, S_IRUSR);
 #define PASID_EAFE_SET  (1 << (135-128))
 
 
-static int pasid;
-static int rid_pasid;
+static int pasid = 0x0;
+static int rid_pasid = 0x0;
 module_param(pasid, int, S_IRUSR);
 module_param(rid_pasid, int, S_IRUSR);
 
